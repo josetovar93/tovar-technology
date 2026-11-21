@@ -1,19 +1,19 @@
   /* --- VARIABLES GLOBALES DE COLOR Y DISEÑO --- */
         :root {
-            --bg-primary: #020816;         /* Fondo principal muy oscuro (slate-950) */
-            --bg-secondary: #090e1a;       /* Fondo de tarjetas y secciones (slate-900) */
-            --bg-card: rgba(2, 6, 14, 0.37);
+            --bg-primary: #01010e;         /* Fondo principal muy oscuro (slate-950) */
+            --bg-secondary: #090e1add;       /* Fondo de tarjetas y secciones (slate-900) */
+            --bg-card: rgba(2, 6, 14, 0.393);
             --border-color: #121a27;       /* Color de bordes sutiles (slate-800) */
             --border-dark: #1f2227;        /* Bordes divisorios (slate-900) */
             --text-primary: #071727;       /* Texto blanco principal (slate-100) */
-            --text-secondary: #b8cfe6;     /* Texto claro secundario (slate-300) */
-            --text-muted: #c6cacf;         /* Texto apagado/descripciones (slate-400) */
-            --accent-indigo: #585aad;      /* Color de marca principal (indigo-500) */
-            --accent-indigo-light: #3e49a8;/* Indigo claro para textos/iconos (indigo-400) */
-            --accent-indigo-dark: #18182b; /* Indigo oscuro para botones (indigo-600) */
+            --text-secondary: #73838a;     /* Texto claro secundario (slate-300) */
+            --text-muted: #b0b4b8;         /* Texto apagado/descripciones (slate-400) */
+            --accent-indigo: #3194d2;      /* Color de marca principal (indigo-500) */
+            --accent-indigo-light: #4296da;/* Indigo claro para textos/iconos (indigo-400) */
+            --accent-indigo-dark: #3095dd; /* Indigo oscuro para botones (indigo-600) */
             --accent-emerald: #10b981;     /* Verde esmeralda (emerald-500) */
             --accent-emerald-dark: #059669;/* Verde esmeralda botón (emerald-600) */
-            --accent-whatsapp: #25D366;    /* Verde oficial de WhatsApp */
+            --accent-whatsapp: #06d88b;    /* Verde oficial de WhatsApp */
             --accent-rose: #af283c;        /* Rojo/Rosa para advertencias (rose-400) */
         }
 
@@ -171,9 +171,9 @@
         }
 
         .btn-nav-whatsapp {
-            background-color: rgba(37, 211, 102, 0.1);
+            background-color: rgba(37, 211, 101, 0.135);
             color: var(--accent-whatsapp);
-            border: 1px solid rgba(37, 211, 102, 0.3);
+            border: 1px solid rgba(20, 206, 88, 0.08);
             padding: 0.45rem 0.85rem;
             border-radius: 0.5rem;
             display: flex;
@@ -350,7 +350,7 @@
            ========================================================================== */
         .service-card {
             padding: 2rem;
-            border: 1px solid rgba(30, 40, 59, 0.973);
+            border: 1px solid rgba(30, 40, 59, 0.74);
             border-radius: 1rem;
             background-color: var(--bg-card);
             transition: all 0.3s ease;
@@ -358,7 +358,7 @@
         }
 
         .service-card:hover {
-            border-color: rgba(99, 102, 241, 0.5);
+            border-color: rgba(66, 110, 186, 0.525);
             transform: translateY(-4px);
         }
 
@@ -881,13 +881,12 @@
             margin-bottom: 0.75rem;
         }
 
-        /* ==========================================================================
-           14. VENTANAS MODALES (POP-UPS)
-           ========================================================================== */
+        /*
+           14. VENTANAS MODALES (POP-UPS) */
         .modal-backdrop {
             position: fixed;
             inset: 0;
-            background-color: rgba(7, 16, 59, 0.85);
+            background-color: rgba(2, 20, 35, 0.333);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             z-index: 50;
@@ -990,3 +989,29 @@
         @media (min-width: 1024px) {
             .grid-4 { grid-template-columns: repeat(4, 1fr); }
         }
+
+
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.footer-legal a {
+    color: #a1a1aa;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #3f92b5;
+}
+
+.footer-separator {
+    color: #52525b;
+    font-size: 12px;
+}

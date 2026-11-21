@@ -1,6 +1,4 @@
- /* --------------------------------------------------------------------------
-           A. BASE DE DATOS DE CONTENIDO DINÁMICO (SECTORES Y MODALES)
-           -------------------------------------------------------------------------- */
+ /* A. BASE DE DATOS DE CONTENIDO DINÁMICO (SECTORES Y MODALES) */
         const sectorData = {
             alimentacao: {
                 title: 'Cardápios Digitais & Atendimento Direto',
@@ -46,7 +44,7 @@
                 body: '<p><b>Estrutura:</b> Design moderno, responsivo e adaptado para conversão.</p><p>Uma demonstração prática de como a estrutura visual e os conteúdos organizados ajudam a reter a atenção do cliente e facilitam a jornada até o orçamento.</p>'
             },
             proj2: {
-                icon: '<i class="fa-solid fa-robot" style="color: #34d399; font-size: 1.75rem;"></i>',
+                icon: '<i class="fa-solid fa-brain" style="color: #1ab37e; font-size: 1.75rem;"></i>',
                 title: 'Exemplo: Agente de IA para Atendimento',
                 body: '<p><b>Funcionalidade:</b> IA integrada para suporte comercial 24/7.</p><p>Demonstração de como um robô inteligente atende seu cliente instantaneamente no WhatsApp, coleta dados relevantes e reduz drasticamente o tempo de espera.</p>'
             }
