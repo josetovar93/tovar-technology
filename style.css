@@ -904,18 +904,29 @@
             pointer-events: auto;
         }
 
-        .modal-box {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 1rem;
-            max-width: 34rem;
-            width: 100%;
-            padding: 2rem;
-            position: relative;
-            transform: scale(0.95);
-            transition: transform 0.3s ease;
-            text-align: left;
-        }
+      .modal-box {
+  box-sizing: border-box;              /* 1 */
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  max-width: 34rem;
+  width: 100%;
+  max-height: calc(100dvh - 2rem);     /* 2 */
+  overflow-y: auto;                    /* 2 */
+  overflow-wrap: anywhere;             /* 3 */
+  padding: 2rem;
+  position: relative;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .modal-box {
+    padding: 1.25rem;                  /* 4 */
+    border-radius: 0.75rem;
+  }
+}
 
         .modal-backdrop.open .modal-box {
             transform: scale(1);
